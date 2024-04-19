@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2024-04-19T05:53:02.847Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="3kAx18zVr9XGWl9syj-f" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-19T06:07:26.864Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="NgCfhdmWuWYPDl6S9d3e" version="24.2.5" type="github">
   <diagram name="Page-1" id="97916047-d0de-89f5-080d-49f4d83e522f">
     <mxGraphModel dx="659" dy="824" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1.5" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="3dde4Ce0lxf_R7vCzBcz-55" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;stable-diffusion-webui规定扩展结构&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3dde4Ce0lxf_R7vCzBcz-55" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;启动扩展结构&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="729" y="230" width="320" height="70" as="geometry" />
         </mxCell>
         <mxCell id="3dde4Ce0lxf_R7vCzBcz-56" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3dde4Ce0lxf_R7vCzBcz-55" target="3dde4Ce0lxf_R7vCzBcz-58">
@@ -13,13 +13,13 @@
             <mxPoint x="990" y="381" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3dde4Ce0lxf_R7vCzBcz-58" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;自定义onediff扩展&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3dde4Ce0lxf_R7vCzBcz-58" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;扩展整合sgm、ldm为UNet提供complier&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="729" y="376" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3dde4Ce0lxf_R7vCzBcz-60" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;确定输入输出类型以及传入参数&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3dde4Ce0lxf_R7vCzBcz-60" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; line-height: 17px; white-space: pre;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 18px; white-space: normal;&quot;&gt;compile_unet为输入模型中UNet部分进行OneDiff加速&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="729" y="495" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3dde4Ce0lxf_R7vCzBcz-61" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;利用扩展中onediff compiler加速UNet&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3dde4Ce0lxf_R7vCzBcz-61" value="&lt;span style=&quot;color: rgb(13, 13, 13); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; text-align: start; white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;返回被优化加速的模型&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="729" y="607" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3dde4Ce0lxf_R7vCzBcz-63" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3dde4Ce0lxf_R7vCzBcz-58" target="3dde4Ce0lxf_R7vCzBcz-60">
@@ -31,12 +31,6 @@
         <mxCell id="3dde4Ce0lxf_R7vCzBcz-64" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3dde4Ce0lxf_R7vCzBcz-60" target="3dde4Ce0lxf_R7vCzBcz-61">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1007" y="490" as="sourcePoint" />
-            <mxPoint x="1057" y="440" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="3dde4Ce0lxf_R7vCzBcz-65" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="3dde4Ce0lxf_R7vCzBcz-55">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="889" y="136" as="sourcePoint" />
             <mxPoint x="1057" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
